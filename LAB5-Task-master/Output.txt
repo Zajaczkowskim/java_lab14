@@ -1,0 +1,63 @@
+Part 1
+Buying 5 items of price 100.0:
+NONE price: 500.0
+PERCENT price: 300.0
+AMOUNT price: 450.0
+TWOFORONE price: 300.0
+
+Part 2
+Bike
+Amount: 3
+Can buy 4: false
+Price for 2: 2000.0
+
+Bike
+Amount: 4
+Can buy 4: true
+Price for 2: 1980.0
+
+Skateboard
+Amount: 5
+Can buy 4: true
+Price for 2: 480.0
+
+Bike
+Amount: 1
+Can buy 4: false
+Price for 2: 5000.0
+
+Part 3
+Bike
+Amount: 3
+Buying two items...
+First bike has been sold!
+Amount: 1
+
+Bike
+Amount: 4
+Buying two items...
+Amount: 2
+
+Skateboard
+Amount: 5
+Buying two items...
+Amount: 3
+
+Bike
+Amount: 1
+Buying two items...
+Amount not available!
+Amount: 1
+
+Part 4
+Total price: 720.0
+Total price: 1320.0
+Total price: 1320.0
+
+Part 5
+AMOUNT
+TWOFORONE
+PERCENT
+
+
+Process finished with exit code 0

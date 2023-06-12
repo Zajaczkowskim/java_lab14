@@ -1,0 +1,50 @@
+Etap 1 - 5pkt
+
+Należy utworzyć typ wyliczeniowy Promotion, który:
+- ma cztery możliwe wartości: NONE, PERCENT, AMOUNT, TWOFORONE
+- ma publiczną metodę CalculatePrice, która przyjmuje liczbę towaru (liczba całkowita)
+oraz oryginalną cenę towaru; metoda zwraca całkowitą cenę uwzględniając promocję
+- NONE - brak promocji
+- PERCENT - 40% zniżki na każdy produkt
+- AMOUNT - rabat w wysokości 10 na każdy produkt
+- TWOFORONE - dwa produkty w cenie jednego, cztery w cenie dwóch, itd.
+
+Etap 2 - 6pkt
+
+Należy utworzyć klasę abstrakcyjną Item oraz dziedziczące po niej klasy Bike oraz Skateboard
+
+Jak najwięcej wspólnej logiki powinno znaleźć się w klasie bazowej.
+
+Muszą być spełnione następujące warunki:
+- konstruktor klasy Bike przyjmuje rodzaj promocji, cenę oraz ilość sztuk
+- konstruktor klasy Skateboard przyjmuje cenę oraz liczbę sztuk (każda deskorolka ma promocję
+typu PERCENT)
+- każda z klas ma publiczną metodę GetAmount(), która zwraca liczbę sztuk
+- każda z klas ma publiczną metodę IsAvailable, która przyjmuje liczbę sztuk i zwraca informację
+czy jest dostępna taka ilość
+- każda z klas ma publiczną metodę GetCost, która przyjmuje liczbę sztuk i zwraca koszt zakupu tylu
+przedmiotów
+
+Etap 3: 5pkt
+
+Utworzyć interfejs Sellable, która udostepnia jedna metode Sell:
+- funkcja przyjmuje liczbę sztuk towaru
+- jeżeli dostępna ilość jest mniejsza, należy wypisać na konsoli "Amount not available!"
+oraz zwrócić false
+- w przeciwnym wypadku należy pomniejszyć liczbę towaru o sprzedaną ilość i zwrócić true
+- dodatkowo w momencie sprzedaży pierwszego roweru należy wypisać informację, że
+"First bike has been sold!"
+
+Etap 4: 5pkt
+
+W klasie Skateboard zaimplementować statyczną metodę TotalPrice, która:
+- nie przyjmuje argumentów
+- zwraca sumaryczny koszt zakupu wszystkich dostępnych deskorolek w programie
+- można założyć, że deskorolek nie będzie więcej niż 100
+
+Etap 5: 4pkt
+
+W klasie Bike zaimplementować statyczną metodę ApplyBestPromotion, która:
+- przyjmuje tablicę zawierającą liczby sztuk
+- przyjmuje tablicę zawierającą koszt kolejnych sztuk
+- zwraca Promocję, dla której cena zakupu wszystkich rowerów jest najniższa
